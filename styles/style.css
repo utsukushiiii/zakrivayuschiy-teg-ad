@@ -8,7 +8,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--card-font-weight, 400);
-  background-image: none;
 }
 
 .header {
@@ -141,17 +140,14 @@
   mix-blend-mode: hard-light;
 }
 
-@supports ((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
-  .article__img-label {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--bg-color, #fff);
-    text-stroke: 1px var(--bg-color, #fff);
-  }
-}
+
 
 .card__button-wrapper {
   display: flex;
-  margin-inline: auto 0;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
   max-block-size: 38px;
 }
 
